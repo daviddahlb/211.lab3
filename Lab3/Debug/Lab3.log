@@ -1,2 +1,5 @@
-﻿  Source1.cpp
-  Lab3.vcxproj -> C:\Users\david\source\repos\211.lab3\Debug\Lab3.exe
+﻿  Number.cpp
+  Source1.cpp
+  Generating Code...
+  LINK : C:\Users\david\source\repos\211.lab3\211.lab3\Debug\Lab3.exe not found or not built by the last incremental link; performing full link
+  Lab3.vcxproj -> C:\Users\david\source\repos\211.lab3\211.lab3\Debug\Lab3.exe

@@ -1,8 +1,9 @@
-/*	David Dahlberg
-	Lab 3
-	
-	Postfix calculator
-
+/*
+Assignment:			211.lab3
+Description:		Postfix calculator
+Author:				David Dahlberg
+HSU ID:				013669107
+Completion Time:	5-6 hours, solo
 */
 
 #include <iostream>
@@ -51,8 +52,7 @@ int main() {
 			//if the string is an operator
 			if (i == "+" || i == "-" || i == "*" || i == "/")
 			{
-				//save the top two Number values 
-				//and then pop two Numbers from number_stack
+				//save the top two Number values, then pop two off number_stack
 				if (!number_stack.empty())
 				{
 					num2 = number_stack.top();
@@ -93,6 +93,7 @@ int main() {
 					number_stack.push(Number(operator_result));
 
 				}
+
 				else if (i == "/")
 				{
 					cout << "divide! ";
@@ -140,16 +141,14 @@ int main() {
 			cout << "ERROR - Invalid expression  -  Stack size is 2 or more, final calculation. " << endl;
 		}
 	
-		else if (!number_stack.empty() && number_stack.size() == 1)
+		else if (number_stack.size() == 1)
 		{
 
-			//stack not empty, and stack size == 1
 			//output final result and pop because done with this expression 
-			//and nothing is saved for next expression
+			//nothing is saved for next expression
 			cout << "Final Result: " << operator_result << endl;
 			number_stack.pop();
 		}
-			
 
 		//for Continue (y/n) functionality
 		while (in_is_bad)
